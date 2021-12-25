@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+
+@font-face {
+  font-family: 'SF_IceLemon';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_IceLemon.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 전체 태그에 적용 */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'SF_IceLemon', cursive;
+  /* font-family: 'Corinthia', cursive; */
+  display: flex; /*하위 태그들을 정렬*/
+  justify-content: center; /* 가로방향정렬*/
+  align-items: center; /* 세로방향정렬*/
+  height: 100vh; /*vh는 화면의 %*/
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: black; /*글자 색*/
+  cursor: pointer; /*이미지 위에 커서 가 올라갔을 때*/
+  flex: 0.5; /*flex의 비율(이미지의 크기)*/
+  margin: 10px;
+  position: relative; /*position 기준*/
+  transition: all 0.7s ease-in; /*transition 모든 변화에 시간 0.7s*/
+}
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0; /*제목 태그는 margin이 기본적으로 있음 그걸 0으로 없앰*/
+  opacity: 0; /*투명도 0(안보임) ~ 1(보임)*/
+}
+/*panel클래스와 active 클래스가 동시에 있을 경우*/
+.panel.active {
+  flex: 5; /*이미지의 크기비율*/
+}
+
+.panel.active h3 {
+  opacity: 1; /*.panel 클래스와 active 클래스가 동시에 있는 h3 태그*/
+  transition: opacity 0.3s ease-in 0.4s;
+}
+/*media query 사용화면이 480px이하 적용*/
+/*madia query 사용하려면 html에 viewport가 있어야함*/
+@media (max-width: 480px) {
+  .container {
+    width: 100vw; /*화면 너비 100%*/
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none; /*4,5번쨰 안보이게*/
+  }
+}
