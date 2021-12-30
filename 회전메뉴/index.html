@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 프로젝트</title>
+    <!-- font awesome을 사용하기위해 필요한 링크 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 왼쪽 상단 버튼 -->
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <!-- font awesome 아이콘 사용 -->
+            <i class="fas fa-times-circle"></i>
+          </button>
+          <button id="open">
+            <!-- font awesome 아이콘 사용 -->
+            <i class="fas fa-stream"></i>
+          </button>
+        </div>
+      </div>
+      <!-- 글 내용(본문) -->
+      <div class="content">
+        <h1>How Tasting Foods!!</h1>
+        <small>Korean foods</small>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          similique vitae itaque deleniti fugiat praesentium dolor id magni
+          corporis quos facere voluptatem consectetur, repellendus illo minus
+          porro ullam sit! Dolore.
+        </p>
+
+        <h3>our foods</h3>
+        <img
+          src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sint
+          architecto repellat asperiores harum minus voluptas alias, quam quo
+          voluptatibus. Inventore, placeat nobis. Atque minus hic distinctio ex
+          exercitationem harum!
+        </p>
+      </div>
+    </div>
+    <!-- 숨어있는 하단 메뉴 -->
+    <nav>
+      <ul>
+        <!-- #은 주소가 없을 때 -->
+        <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+        <li><i class="fas fa-address-card"></i><a href="#">About</a></li>
+        <li><i class="fas fa-envelope"></i><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
