@@ -1,0 +1,35 @@
+body {
+  background-image: linear-gradient(aliceblue, skyblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div div {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+  background-color: bisque;
+  cursor: pointer;
+}
+
+div.show {
+  background-color: red;
+  transition: transform 0.4s ease;
+}
+
+div.pop {
+  background-color: blue;
+  /* transform: translatex(800%); */
+  transition: transform 0.5s ease;
+}
+
+div.pop.show {
+  background-color: purple;
+}
