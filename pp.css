@@ -1,0 +1,41 @@
+:root {
+  --a: aliceblue;
+  --g: rgb(168, 168, 168);
+  --r: rgb(233, 93, 93);
+  --y: rgb(219, 219, 186);
+}
+
+body {
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+div {
+  background-color: white;
+  margin: 30px;
+  padding: 30px;
+  border: 3px solid;
+}
+
+div ul {
+  background-color: aliceblue;
+  margin: 3px;
+  text-align: center;
+}
+
+.box1 ul .t.Toggle {
+  background-color: var(--r);
+}
+
+#count {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  left: 105px;
+}
+#toggle {
+  position: relative;
+  left: 50px;
+}
