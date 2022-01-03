@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* 전체 태그에 적용 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', monospace;
+  /* font-family: 'Corinthia', cursive; */
+  display: flex; /*하위 태그들을 정렬*/
+  justify-content: center; /* 가로방향정렬*/
+  align-items: center; /* 세로방향정렬*/
+  height: 100vh; /*vh는 화면의 %*/
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background: no-repeat center/cover
+    /*반복없이 그림위치중간/그림크기 bg클래스 영역 전체*/
+    url('https://images.unsplash.com/photo-1641096179465-52e208f6dc49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80');
+  position: absolute; /*위치가 가장 위로*/
+  width: 100vw; /*100%너비*/
+  height: 100vh; /*100%높이*/
+  filter: blur(0px); /*0 ~ 30%*/
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.loading-text {
+  color: black;
+  font-size: 50px;
+}
